@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int st, et, duration;
+    scanf("%d%d", &st, &et);
+
+    if(st == et)
+    {
+        duration = 24 - st + et;
+        printf("O JOGO DUROU %d HORA(S)\n", duration);
+    }
+    else if(et > st)
+    {
+        duration = et - st;
+        printf("O JOGO DUROU %d HORA(S)\n", duration);
+    }
+    else if(st > et)
+    {
+        duration = 24 - st + et;
+        printf("O JOGO DUROU %d HORA(S)\n", duration);
+    }
+
+    return 0;
+}
